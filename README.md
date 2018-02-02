@@ -60,7 +60,19 @@ REGISTER -> [R followed by number 1-12]
 LABELNAME -> [up to 25 letters]
 ```
 
-The point of all this is to give meaningful errors:
+The point of all this is to give meaningful errors.
+
+With input file test.txt:
+
+```
+MOVE s, d
+MOVEI a, b, c
+ADD R12, R2, d
+BEQ R1, R2, hi
+```
+
+it gives this error:
+
 ```
 Exception when parsing Token [PUNCTUATION: ,] in line 2:9
 java.lang.Exception: Expected NEWLINE, but encountered [PUNCTUATION: ,]
