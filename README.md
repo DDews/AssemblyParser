@@ -84,3 +84,5 @@ java.lang.Exception: Expected NEWLINE, but encountered [PUNCTUATION: ,]
 	at Parser.<init>(Parser.java:8)
 	at Main.main(Main.java:13)
 ```
+
+because MOVEI only takes two operands.
