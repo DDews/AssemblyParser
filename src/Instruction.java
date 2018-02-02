@@ -5,8 +5,12 @@ public class Instruction extends Node {
         token = next;
         switch (next.data.toUpperCase()) {
             case "MOVE":
-            case "MOVEI":
                 twoOperands(tokens);
+                break;
+            case "MOVEI":
+                children.add(new Operand(tokens));
+                eatComma(tokens);
+                children.add(new Value(tokens));
                 break;
             case "INC":
             case "DEC":

@@ -74,15 +74,16 @@ BEQ R1, R2, hi
 it gives this error:
 
 ```
-Exception when parsing Token [PUNCTUATION: ,] in line 2:9
-java.lang.Exception: Expected NEWLINE, but encountered [PUNCTUATION: ,]
+Exception when parsing Token [WORD: b] in line 2:6
+java.lang.Exception: Invalid unsigned integer VALUE: [WORD: b]
 	at Node.throwEx(Node.java:14)
-	at NewLine.<init>(NewLine.java:7)
-	at Statement.<init>(Statement.java:12)
+	at Value.<init>(Value.java:12)
+	at Instruction.<init>(Instruction.java:13)
+	at Statement.<init>(Statement.java:11)
 	at Statements.<init>(Statements.java:3)
 	at Statements.<init>(Statements.java:9)
 	at Parser.<init>(Parser.java:8)
 	at Main.main(Main.java:13)
 ```
 
-because MOVEI only takes two operands.
+because MOVEI only takes two operands, and second must be unsigned integer in octal.
