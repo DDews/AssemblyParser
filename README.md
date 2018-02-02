@@ -86,4 +86,4 @@ java.lang.Exception: Invalid unsigned integer VALUE: [WORD: b]
 	at Main.main(Main.java:13)
 ```
 
-because MOVEI only takes two operands, and second must be unsigned integer in octal.
+because MOVEI only takes two operands, and first must be unsigned integer in octal.
