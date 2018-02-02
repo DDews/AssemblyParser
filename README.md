@@ -4,10 +4,12 @@ This is a reference for those wanting to understand Recursive Descent Parsers fo
 This recursive descent parser attempts to give meaningful error messages when creating a parse-tree for the language from a text file.
 
 For execution:
+```
 	javac *.java
 	java Main
-
+```
 To use:
+
 	Type up a text file in the assembly language, and type in the file name. File must be in same directory as .java files.
 
 
