@@ -76,7 +76,7 @@ BEQ R1, R2, hi
 it gives this error:
 
 ```
-Exception when parsing Token [WORD: a] in line 2:0
+Exception when parsing Token [WORD: a] in line 2:7
 java.lang.Exception: Invalid unsigned integer VALUE: [WORD: a]
 	at Node.throwEx(Node.java:14)
 	at Value.<init>(Value.java:12)

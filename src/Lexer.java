@@ -75,7 +75,7 @@ public class Lexer {
                                 current.type = Lexicon.PUNCTUATION;
                         }
                         tokens.add(current);
-                        current = new Token(lines,c - current.data.length());
+                        current = new Token(lines,c);
                     } else if (Character.isWhitespace(x)) {
                     // skip whitespace
                     }
@@ -85,11 +85,11 @@ public class Lexer {
                         current.data += x;
                     } else if (x != '\n' && Character.isWhitespace(x)) {
                         tokens.add(current);
-                        current = new Token(lines,c - current.data.length());
+                        current = new Token(lines,c);
                         state = LexerState.START;
                     } else if (isPunctuation(x)) {
                         tokens.add(current);
-                        current = new Token(lines,c - current.data.length());
+                        current = new Token(lines,c);
                         state = LexerState.START;
                         c--; // put char back
                     } else {
@@ -101,7 +101,7 @@ public class Lexer {
                         current.data += x;
                     } else if (x != '\n' && Character.isWhitespace(x)) {
                         tokens.add(current);
-                        current = new Token(lines,c - current.data.length());;
+                        current = new Token(lines,c);;
                         state = LexerState.START;
                     } else if (isPunctuation(x)) {
                         switch (x) {
@@ -112,7 +112,7 @@ public class Lexer {
                                 current.type = Lexicon.WORD;
                         }
                         tokens.add(current);
-                        current = new Token(lines,c - current.data.length());
+                        current = new Token(lines,c);
                         state = LexerState.START;
                         c--; // put back character
                     } else {
@@ -125,11 +125,11 @@ public class Lexer {
                         current.type = Lexicon.REGISTER;
                     } else if (Character.isWhitespace(x)) {
                         tokens.add(current);
-                        current = new Token(lines,c - current.data.length());
+                        current = new Token(lines,c);
                         state = LexerState.START;
                     } else if (isPunctuation(x)) {
                         tokens.add(current);
-                        current = new Token(lines,c - current.data.length());
+                        current = new Token(lines,c);
                         state = LexerState.START;
                         c--; // put char back
                     } else {

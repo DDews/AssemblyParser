@@ -8,7 +8,7 @@ public class Token {
         this.line = line;
     }
     public Token(int line, int c) {
-        this(line + ":" + c);
+        this(line + ":" + (c + 2));
     }
     public Token() {
         this("?:?");
