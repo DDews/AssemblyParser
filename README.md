@@ -15,7 +15,7 @@ To use:
 
 BNF for this simple assembly language:
 
-~note: I have taken liberties of denoting more complex grammar in plain english instead, specified by enclosing [] brackets.~
+*note: I have taken liberties of denoting more complex grammar in plain english instead, specified by enclosing [] brackets*
 ```
 STATEMENTS -> STATEMENT | STATEMENT STATEMENTS
 
