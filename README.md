@@ -53,6 +53,8 @@ INSTRUCTION -> MOVE OPERAND, OPERAND |
 
 OPERAND -> LOCATION | REGISTER | LABELNAME
 
+VALUE -> [unsigned integer in octal]
+
 LOCATION -> [up to 5 characters letters only]
 
 REGISTER -> [R followed by number 1-12]
