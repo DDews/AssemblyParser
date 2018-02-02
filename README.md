@@ -13,6 +13,7 @@ To use:
 
 BNF for this simple assembly language:
 
+```
 STATEMENTS -> STATEMENT | STATEMENT STATEMENTS
 
 STATEMENT -> LABEL NEWLINE | INSTRUCTION NEWLINE
@@ -54,4 +55,4 @@ LOCATION -> [up to 5 characters letters only]
 REGISTER -> [R followed by number 1-12]
 
 LABELNAME -> [up to 25 letters]
-
+```
