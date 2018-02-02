@@ -9,6 +9,7 @@ public class Parser {
         } catch (Exception e) {
             e.printStackTrace();
         }
+        System.out.println("\nParse-tree:");
         System.out.println(head);
     }
 }

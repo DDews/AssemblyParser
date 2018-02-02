@@ -10,7 +10,7 @@ public class Instruction extends Node {
                 break;
             case "INC":
             case "DEC":
-                children.add(new Operand(tokens));
+                children.add(new Location(tokens));
                 break;
             case "SUB":
             case "MUL":
@@ -24,7 +24,7 @@ public class Instruction extends Node {
                 twoOperandsAndLabel(tokens);
                 break;
             case "BR":
-                children.add(new Label(tokens));
+                children.add(new Location(tokens));
                 break;
             default:
                 throwEx("Invalid OP-code: " + next.data);
