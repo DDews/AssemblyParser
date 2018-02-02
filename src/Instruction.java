@@ -8,9 +8,9 @@ public class Instruction extends Node {
                 twoOperands(tokens);
                 break;
             case "MOVEI":
-                children.add(new Operand(tokens));
-                eatComma(tokens);
                 children.add(new Value(tokens));
+                eatComma(tokens);
+                children.add(new Operand(tokens));
                 break;
             case "INC":
             case "DEC":

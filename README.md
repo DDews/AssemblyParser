@@ -76,11 +76,11 @@ BEQ R1, R2, hi
 it gives this error:
 
 ```
-Exception when parsing Token [WORD: b] in line 2:6
-java.lang.Exception: Invalid unsigned integer VALUE: [WORD: b]
+Exception when parsing Token [WORD: a] in line 2:0
+java.lang.Exception: Invalid unsigned integer VALUE: [WORD: a]
 	at Node.throwEx(Node.java:14)
 	at Value.<init>(Value.java:12)
-	at Instruction.<init>(Instruction.java:13)
+	at Instruction.<init>(Instruction.java:11)
 	at Statement.<init>(Statement.java:11)
 	at Statements.<init>(Statements.java:3)
 	at Statements.<init>(Statements.java:9)
